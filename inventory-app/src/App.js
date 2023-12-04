@@ -10,10 +10,10 @@ import { useState } from "react";
 
 function App() {
   const [IsLoggedIn, setIsLoggedIn] = useState(false);
-  console.log(IsLoggedIn);
+  
 
   const [IsSignedUp, setIsSignedUp] = useState(false);
-  console.log(IsSignedUp);
+  
 
   return (
     <>
