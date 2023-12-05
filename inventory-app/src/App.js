@@ -10,18 +10,14 @@ import { useState } from "react";
 
 function App() {
   const [IsLoggedIn, setIsLoggedIn] = useState(false);
-  
-
   const [IsSignedUp, setIsSignedUp] = useState(false);
   
-
   return (
     <>
       <Navbar
         LoginVerified={IsLoggedIn}
-        // SignupVerified={IsSignedUp}
         LoginCheck={setIsLoggedIn}
-        // SignUpCheck={setIsSignedUp}
+        
       />
       <Routes>
         <Route path="/login" element={<Login LoginCheck={setIsLoggedIn} />} />
