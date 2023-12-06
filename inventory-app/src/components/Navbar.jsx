@@ -20,6 +20,7 @@ const Navbar = ({ LoginVerified, LoginCheck }) => {
       });
       if (response.ok) {
         LoginCheck(false);
+        localStorage.removeItem("IsLoggedIn");
         navigate("/");
         return response.json();
         // Handle success if needed
