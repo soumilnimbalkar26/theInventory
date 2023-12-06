@@ -66,7 +66,7 @@ const DashbboardSidebar = () => {
 
   return (
     <>
-      <aside className="fixed top-100 left-0 z-40 w-[300px] h-full">
+      <aside className="fixed top-100 left-0 z-50 w-[300px] h-full">
         <div className="h-full px-3 py-4 bg-gray-50">
           <ul className="font-medium flex flex-col gap-4">
             <li onClick={toggleMenuQuotations}>
@@ -78,27 +78,27 @@ const DashbboardSidebar = () => {
               </Link>
             </li>
             {QuotationMenuOpen ? (
-              <ul className="flex flex-col gap-1 ml-4 bg-gray-200 rounded-lg">
-                <li className="p-2 text-gray-900 rounded-lg hover:bg-gray-300 border border-slate-400">
-                  <a href="#">Create Quotation</a>
+              <ul className="flex flex-col gap-1 ml-4  rounded-lg">
+                <li className="p-2 text-gray-900 bg-gray-200 rounded-lg hover:bg-gray-300 border border-slate-400">
+                  <Link to="#">Create Quotation</Link>
                 </li>
-                <li className="p-2 text-gray-900 rounded-lg hover:bg-gray-300 border border-slate-400">
-                  <a href="#">All Quotation</a>
+                <li className="p-2 text-gray-900 bg-gray-200 rounded-lg hover:bg-gray-300 border border-slate-400">
+                  <Link to="#">All Quotation</Link>
                 </li>
-                <li className="p-2 text-gray-900 rounded-lg hover:bg-gray-300 border border-slate-400">
-                  <a href="#">New Quotation</a>
+                <li className="p-2 text-gray-900 bg-gray-200 rounded-lg hover:bg-gray-300 border border-slate-400">
+                  <Link to="#">New Quotation</Link>
                 </li>
-                <li className="p-2 text-gray-900 rounded-lg hover:bg-gray-300 border border-slate-400">
-                  <a href="#">Sent to Client</a>
+                <li className="p-2 text-gray-900 bg-gray-200 rounded-lg hover:bg-gray-300 border border-slate-400">
+                  <Link to="#">Sent to Client</Link>
                 </li>
-                <li className="p-2 text-gray-900 rounded-lg hover:bg-gray-300 border border-slate-400">
-                  <a href="#">Accepted</a>
+                <li className="p-2 text-gray-900 bg-gray-200 rounded-lg hover:bg-gray-300 border border-slate-400">
+                  <Link to="#">Accepted</Link>
                 </li>
-                <li className="p-2 text-gray-900 rounded-lg hover:bg-gray-300 border border-slate-400">
-                  <a href="#">Declined</a>
+                <li className="p-2 text-gray-900 bg-gray-200 rounded-lg hover:bg-gray-300 border border-slate-400">
+                  <Link to="#">Declined</Link>
                 </li>
-                <li className="p-2 text-gray-900 rounded-lg hover:bg-gray-300 border border-slate-400">
-                  <a href="#">Analyze Decline</a>
+                <li className="p-2 text-gray-900 bg-gray-200 rounded-lg hover:bg-gray-300 border border-slate-400">
+                  <Link to="#">Analyze Decline</Link>
                 </li>
               </ul>
             ) : (
@@ -114,12 +114,12 @@ const DashbboardSidebar = () => {
               </Link>
             </li>
             {UserMenuOpen ? (
-              <ul className="flex flex-col gap-1 ml-4 bg-gray-200 rounded-lg">
-                <li className="p-2 text-gray-900 rounded-lg hover:bg-gray-300 border border-slate-400">
-                  <a href="#">Add User</a>
+              <ul className="flex flex-col gap-1 ml-4 rounded-lg">
+                <li className="p-2 text-gray-900 bg-gray-200 rounded-lg hover:bg-gray-300 border border-slate-400">
+                  <Link to="/addUser">Add User</Link>
                 </li>
-                <li className="p-2 text-gray-900 rounded-lg hover:bg-gray-300 border border-slate-400">
-                  <a href="#">All Users</a>
+                <li className="p-2 text-gray-900 bg-gray-200 rounded-lg hover:bg-gray-300 border border-slate-400">
+                  <Link to="#">All Users</Link>
                 </li>
               </ul>
             ) : (
@@ -137,12 +137,12 @@ const DashbboardSidebar = () => {
               </Link>
             </li>
             {PSMenu ? (
-              <ul className="flex flex-col gap-1 ml-4 bg-gray-200 rounded-lg">
-                <li className="p-2 text-gray-900 rounded-lg hover:bg-gray-300 border border-slate-400">
-                  <a href="#">Add Products/Services</a>
+              <ul className="flex flex-col gap-1 ml-4 rounded-lg">
+                <li className="p-2 text-gray-900 bg-gray-200 rounded-lg hover:bg-gray-300 border border-slate-400">
+                  <Link to="#">Add Products/Services</Link>
                 </li>
-                <li className="p-2 text-gray-900 rounded-lg hover:bg-gray-300 border border-slate-400">
-                  <a href="#">All Products/Services</a>
+                <li className="p-2 text-gray-900 bg-gray-200 rounded-lg hover:bg-gray-300 border border-slate-400">
+                  <Link to="#">All Products/Services</Link>
                 </li>
               </ul>
             ) : (
@@ -158,12 +158,12 @@ const DashbboardSidebar = () => {
               </Link>
             </li>
             {ClientMenu ? (
-              <ul className="flex flex-col gap-1 ml-4 bg-gray-200 rounded-lg">
-                <li className="p-2 text-gray-900 rounded-lg hover:bg-gray-300 border border-slate-400">
-                  <a href="#">Add Client</a>
+              <ul className="flex flex-col gap-1 ml-4 rounded-lg">
+                <li className="p-2 text-gray-900 bg-gray-200 rounded-lg hover:bg-gray-300 border border-slate-400">
+                  <Link to="#">Add Client</Link>
                 </li>
-                <li className="p-2 text-gray-900 rounded-lg hover:bg-gray-300 border border-slate-400">
-                  <a href="#">All Clients</a>
+                <li className="p-2 text-gray-900 bg-gray-200 rounded-lg hover:bg-gray-300 border border-slate-400">
+                  <Link to="#">All Clients</Link>
                 </li>
               </ul>
             ) : (
@@ -180,12 +180,12 @@ const DashbboardSidebar = () => {
             </li>
 
             {AdminMenu ? (
-              <ul className="flex flex-col gap-1 ml-4 bg-gray-200 rounded-lg">
-                <li className="p-2 text-gray-900 rounded-lg hover:bg-gray-300 border border-slate-400">
-                  <a href="#">Create Company</a>
+              <ul className="flex flex-col gap-1 ml-4 rounded-lg">
+                <li className="p-2 text-gray-900 bg-gray-200 rounded-lg hover:bg-gray-300 border border-slate-400">
+                  <Link to="#">Create Company</Link>
                 </li>
-                <li className="p-2 text-gray-900 rounded-lg hover:bg-gray-300 border border-slate-400">
-                  <a href="#">Company Details</a>
+                <li className="p-2 text-gray-900 bg-gray-200 rounded-lg hover:bg-gray-300 border border-slate-400">
+                  <Link to="#">Company Details</Link>
                 </li>
               </ul>
             ) : (
@@ -203,18 +203,18 @@ const DashbboardSidebar = () => {
               </Link>
             </li>
             {QRMenu ? (
-              <ul className="flex flex-col gap-1 ml-4 bg-gray-200 rounded-lg">
-                <li className="p-2 text-gray-900 rounded-lg hover:bg-gray-300 border border-slate-400">
-                  <a href="#">Request Quotation</a>
+              <ul className="flex flex-col gap-1 ml-4 rounded-lg">
+                <li className="p-2 text-gray-900 bg-gray-200 rounded-lg hover:bg-gray-300 border border-slate-400">
+                  <Link to="#">Request Quotation</Link>
                 </li>
-                <li className="p-2 text-gray-900 rounded-lg hover:bg-gray-300 border border-slate-400">
-                  <a href="#">All Requests</a>
+                <li className="p-2 text-gray-900 bg-gray-200 rounded-lg hover:bg-gray-300 border border-slate-400">
+                  <Link to="#">All Requests</Link>
                 </li>
-                <li className="p-2 text-gray-900 rounded-lg hover:bg-gray-300 border border-slate-400">
-                  <a href="#">My Requests</a>
+                <li className="p-2 text-gray-900 bg-gray-200 rounded-lg hover:bg-gray-300 border border-slate-400">
+                  <Link to="#">My Requests</Link>
                 </li>
-                <li className="p-2 text-gray-900 rounded-lg hover:bg-gray-300 border border-slate-400">
-                  <a href="#">Overdue Requests</a>
+                <li className="p-2 text-gray-900 bg-gray-200 rounded-lg hover:bg-gray-300 border border-slate-400">
+                  <Link to="#">Overdue Requests</Link>
                 </li>
               </ul>
             ) : (
