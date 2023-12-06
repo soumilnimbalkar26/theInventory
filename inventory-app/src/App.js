@@ -6,11 +6,16 @@ import SignUp from "./pages/SignUp";
 import HomePage from "./pages/HomePage";
 import About from "./pages/About";
 import Dashboard from "./Dashboard/Dashboard"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
-  const [IsLoggedIn, setIsLoggedIn] = useState(false);
-  const [IsSignedUp, setIsSignedUp] = useState(false);
+  const [IsLoggedIn, setIsLoggedIn] = useState(localStorage.getItem("IsLoggedIn") === "true");
+  const [IsSignedUp, setIsSignedUp] = useState(localStorage.getItem("IsSignedUp") === "true");
+  
+  useEffect(() => {
+    localStorage.setItem("IsLoggedIn", IsLoggedIn);
+    localStorage.setItem("IsSignedUp", IsSignedUp);
+  }, [IsLoggedIn, IsSignedUp]);
   
   return (
     <>
@@ -19,6 +24,9 @@ function App() {
         LoginCheck={setIsLoggedIn}
         
       />
+
+
+
       <Routes>
         <Route path="/login" element={<Login LoginCheck={setIsLoggedIn} />} />
         <Route
